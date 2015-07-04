@@ -1,0 +1,426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0064)http://www.sources.ru/delphi/delphi_convert_string_to_math.shtml -->
+<HTML><HEAD><TITLE>Информационный сервер для программистов - исходники со всего света.</TITLE>
+<STYLE type=text/css>A.black:link {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial,Verdana,Tahoma,sans-serif; TEXT-DECORATION: none
+}
+A.black:visited {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial,Verdana,Tahoma,sans-serif; TEXT-DECORATION: none
+}
+A.black:hover {
+	FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial,Verdana,Tahoma,sans-serif; TEXT-DECORATION: none
+}
+A.blue:link {
+	FONT-SIZE: 9pt; COLOR: #0441a6; FONT-FAMILY: Arial,Verdana,Tahoma,sans-serif; TEXT-DECORATION: none
+}
+A.blue:visited {
+	FONT-SIZE: 9pt; COLOR: #0441a6; FONT-FAMILY: Arial,Verdana,Tahoma,sans-serif; TEXT-DECORATION: none
+}
+A.blue:hover {
+	FONT-SIZE: 9pt; COLOR: #2776fa; FONT-FAMILY: Arial,Verdana,Tahoma,sans-serif; TEXT-DECORATION: none
+}
+.b {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.b:hover {
+	COLOR: #7785ff
+}
+.c {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.c:hover {
+	COLOR: #ffffff
+}
+PRE {
+	COLOR: blue
+}
+PRE.a {
+	COLOR: black
+}
+TD.colon {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: "MS Sans Serif", sans-serif
+}
+</STYLE>
+
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META 
+content="программирование на Visual Basic, документация, документы, delphi, pascal, cpp, hardware, web, веб-мастер, советы, описания, доки, manual, Java, C, C++, обучение, исходники, odbc, jdbc, programm, protocols, протоколы, общение, форумapplet, java, design, апплет, дизайн, ява, Free, counters, Trackers, Guestbooks, Access Logs, Banners, Graphics, Banner ads, Fonts, Form Mailer, form mailers, graphics, icons, games, freeware, shareware, forms, guestbooks, Java, Javascript, contests, puzzles, fonts, font resources, E-mail programs, reminder services, product samples, samples, Email services, E-mail services, advertising, graphics, free banner ads, free World Wide Web resources, counters, Trackers, Guestbooks, Access Logs, Banners, Graphics, Banner ads, Fonts, Form Mailer, form mailers, graphics, icons, games, freeware, shareware, forms, guestbooks, Java, Javascript, contests, puzzles, fonts, font resources, E-mail programs, reminder services, product samples, samples, Email services, E-mail services, advertising, graphics, free banner ads, free World Wide Web resources" 
+name=keywords>
+<META 
+content="pop hypertext sources hypermedia server scripting shtml phtml html developer code base tools open source web site browser free software webmaster cgi dhtml dynamic content netscape explorer shareware download website construction free tutorial news design maintenance page hit cvs mailing list projects httpd mod_perl mod www htdig xml perl scripts script server-side-include apache database MySQL mysql msql postres postresql module linux online cpp Visual Basic JavaScript delphi wap job informer java opengl directx" 
+name=RESOURCE-TYPE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=white leftMargin=0 topMargin=0 marginheigth="0" marginwidth="0">
+<FORM action=/cgi-bin/sources/search/search.cgi method=get align="left"><INPUT 
+type=hidden value=0 name=stpos>
+<TABLE cellSpacing=0 cellPadding=0 width=750 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top rowSpan=2>
+      <TABLE cellSpacing=0 cellPadding=0 width=287 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle bgColor=#a5e4a7 
+            colSpan=2><B>WWW.ИСХОДНИКИ.РУ</B></TD>
+          <TD vAlign=center align=middle bgColor=#000080><B><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma color=#ffffff 
+            size=-1>cpp.sources.ru</FONT></B></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle bgColor=#000080><B><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma color=#ffffff 
+            size=-1>java.sources.ru</FONT></B></TD>
+          <TD vAlign=center align=middle bgColor=#c0c0c0><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma 
+            size=-1><B>web.sources.ru</B></FONT></TD>
+          <TD vAlign=center align=middle bgColor=#a5e4a7><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma 
+            size=-1><B>soft.sources.ru</B></FONT></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle bgColor=#c0c0c0><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma 
+            size=-1><B>jdbc.sources.ru</B></FONT></TD>
+          <TD vAlign=center align=middle bgColor=#a5e4a7><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma 
+            size=-1><B>asp.sources.ru</B></FONT></TD>
+          <TD vAlign=center align=middle bgColor=#000080><B><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma color=#ffffff 
+            size=-1>api.sources.ru</FONT></B></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><FONT style="FONT-SIZE: 8pt" face=Tahoma size=2>&nbsp; Поиск по 
+            программированию :<BR></FONT>&nbsp; <INPUT size=13 name=query> <INPUT type=submit value=Поиск><FONT size=1><INPUT type=radio 
+            CHECKED value=AND name=stype>"AND" <INPUT type=radio value=OR 
+            name=stype>"OR"</FONT> <!--TopList COUNTER--><A 
+            href="http://top.list.ru/jump?from=89876" target=_top>
+            <SCRIPT language=JavaScript><!--
+d=document;a='';a+=';r='+escape(d.referrer)
+js=10//--></SCRIPT>
+
+            <SCRIPT language=JavaScript1.1><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></SCRIPT>
+
+            <SCRIPT language=JavaScript1.2><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></SCRIPT>
+
+            <SCRIPT language=JavaScript1.3><!--
+js=13//--></SCRIPT>
+
+            <SCRIPT language=JavaScript><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=89876;t=57;js='+js+a+';rand='+Math.random()+
+'" alt="TopList" '+ 'border=0 height=1 width=1>')
+if(js>11)d.write('<'+'!-- ')//--></SCRIPT>
+            <NOSCRIPT><IMG height=1 alt=TopList 
+            src="Информационный сервер для программистов - исходники со всего света.files/counter.gif" 
+            width=1 border=0></NOSCRIPT>
+            <SCRIPT 
+            language=JavaScript><!--
+if(js>11)d.write('--'+'>')//--></SCRIPT>
+            </A><!--TopList COUNTER--> <A 
+            href="http://counter.rambler.ru/top100/"><IMG height=1 
+            alt="Rambler's Top100" 
+            src="Информационный сервер для программистов - исходники со всего света.files/top100.gif" 
+            width=1 border=0></A> <!-- SpyLOG f:0211 -->
+            <SCRIPT language=javascript> 
+u="u1624.10.spylog.com";d=document;nv=navigator;na=nv.appName;p=1; 
+bv=Math.round(parseFloat(nv.appVersion)*100); 
+n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random();z="p="+p+"&rn="+rn;y=""; 
+y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>"; 
+y+="<img src='http://"+u+"/cnt?"+z+ 
+"&r="+escape(d.referrer)+"&pg="+escape(window.location.href)+"' border=0 width=1 height=1 alt='SpyLOG'>"; 
+y+="</a>"; d.write(y);if(!n) { d.write("<"+"!--"); }//--></SCRIPT>
+            <NOSCRIPT><A href="http://u1624.10.spylog.com/cnt?f=3&amp;p=1" 
+            target=_blank><IMG height=1 alt=SpyLOG 
+            src="Информационный сервер для программистов - исходники со всего света.files/cnt.gif" 
+            width=1 border=0> </A></NOSCRIPT>
+            <SCRIPT language=javascript1.2><!-- 
+if(!n) { d.write("--"+">"); }//--></SCRIPT>
+<!-- SpyLOG --><!-- HotLog -->
+            <SCRIPT language=javascript>
+hotlog_js="1.0";hotlog_d=document; hotlog_n=navigator;hotlog_rn=Math.random();
+hotlog_n_n=(hotlog_n.appName.substring(0,3)=="Mic")?0:1;
+hotlog_r=""+hotlog_rn+"&s=14399&r="+escape(hotlog_d.referrer)+"&pg="+
+escape(window.location.href);
+hotlog_d.cookie="hotlog=1"; hotlog_r+="&c="+(hotlog_d.cookie?"Y":"N");
+hotlog_d.cookie="hotlog=1; expires=Thu, 01-Jan-70 00:00:01 GMT"</SCRIPT>
+
+            <SCRIPT language=javascript1.1>
+hotlog_js="1.1";hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N")</SCRIPT>
+
+            <SCRIPT language=javascript1.2>
+hotlog_js="1.2";hotlog_s=screen;
+hotlog_r+="&wh="+hotlog_s.width+'x'+hotlog_s.height+"&px="+((hotlog_n_n==0)?
+hotlog_s.colorDepth:hotlog_s.pixelDepth)</SCRIPT>
+
+            <SCRIPT language=javascript1.3>hotlog_js="1.3"</SCRIPT>
+
+            <SCRIPT language=javascript>hotlog_r+="&js="+hotlog_js;
+hotlog_d.write("<img src=\"http://hit2.hotlog.ru/cgi-bin/hotlog/count?"+
+hotlog_r+"&\" border=0 width=1 height=1>")</SCRIPT>
+            <NOSCRIPT><IMG height=1 
+            src="Информационный сервер для программистов - исходники со всего света.files/count" 
+            width=1 border=0></NOSCRIPT> <!-- /HotLog --></TD></TR></TBODY></TABLE></TD>
+    <TD align=middle><A class=blue 
+      href="http://pascal.sources.ru/cd/index.htm"><IMG height=14 
+      src="Информационный сервер для программистов - исходники со всего света.files/cd0.gif" 
+      width=14 border=0> <B>Все исходники с сайта на компакт-диске!</B> <!--
+        <font style="font-size: 15pt" color="#4904B1" size="4"
+        face="Times New Roman">Информационный сервер</font>
+--></A></TD></TR>
+  <TR>
+    <TD><!-- SCALA --><A href="http://bs.boro.ru/click.php?bs=831" 
+      target=_blank><IMG height=60 
+      alt="Всемирный разработчик и поставщик программного обеспечения по управлению бизнесом, финансами и производством для местных и международных компаний." 
+      src="Информационный сервер для программистов - исходники со всего света.files/scala.gif" 
+      width=468 border=0></A><BR><!-- SCALA --><!-- БАННЕР IMHO 
+
+<a href="http://santa.imho.ru/click.ng/impt=imp&place=sources468x60&id=280404" target="_blank"><img src="http://santa.imho.ru/image.ng/impt=imp&place=sources468x60&id=280404" width=468 height=60 border=0></a>
+
+  БАННЕР IMHO --><!-- БАННЕР TBN
+
+	<CENTER>
+<SCRIPT language='JavaScript'> var loc = ''; </SCRIPT>
+<SCRIPT language='JavaScript1.4'>try{ var loc = escape(top.location.href); }catch(e){;}</SCRIPT>
+<SCRIPT language='JavaScript'>
+ document.write("<SC"+"RIPT language='JavaScript' src='http://ad.tbn.ru/bb.cgi?cmd=ad&hreftarget=_blank&pubid=2845047&pg=2&r=js&ssi=nofillers&vbn=188&num=1&w=468&h=60&&ref="+escape(document.referrer)+"&loc="+loc+"&nocache="+Math.round(Math.random()*999111)+"'>\n</SC"+"RIPT>");
+</SCRIPT>
+</CENTER>
+<center><FONT SIZE=1><A HREF="http://www.tbn.ru" target = "_top" >TBN.ru - СЕТЬ, ЖИВУЩАЯ ПО ПРАВИЛАМ</A></FONT></center>
+
+
+ БАННЕР TBN--></TD></TR>
+  <TR>
+    <TD colSpan=2>
+      <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle width="11%" bgColor=#e0e0c6><A 
+            href="http://www.sources.ru/index.html"><FONT color=#000000 
+            size=2>На главную</FONT></A></TD>
+          <TD align=middle width="20%" bgColor=#e0e0c6><A 
+            href="http://www.sources.ru/subscribe.shtml"><FONT color=#000000 
+            size=2>Подписаться на новости</FONT></A></TD>
+          <TD align=middle width="11%" bgColor=#e0e0c6><A 
+            href="http://forum.sources.ru/"><FONT color=#000000 
+            size=2>Форум</FONT></A></TD>
+          <TD align=middle width="9%" bgColor=#e0e0c6><A 
+            href="http://www.sources.ru/books/index.html"><FONT color=#000000 
+            size=2>Книги</FONT></A></TD>
+          <TD align=middle width="9%" bgColor=#e0e0c6><A 
+            href="http://www.mastak.ru/p/2724"><FONT color=#000000 
+            size=2>Хостинг</FONT></A></TD>
+          <TD align=middle width="13%" bgColor=#e0e0c6><A 
+            href="http://www.countries.ru/"><FONT color=#000000 size=2>Страны 
+            мира</FONT></A></TD>
+          <TD align=middle width="29%" bgColor=#e0e0c6><B>11</B> пользователей 
+            на сервере. </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FORM><!-- ТЕКСТОВЫЙ БАННЕР CERTIFICATION -->
+<CENTER>
+<TABLE cellSpacing=0 width=322 border=1>
+  <TBODY>
+  <TR>
+    <TD width=318><SMALL><FONT 
+      face=Arial>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <B>Сертификация специалистов</B><BR>- Как устроиться на высокооплачиваемую 
+      работу ?<BR>- Как получить прибавку к зарплате ?<BR>- Как завоевать 
+      уважение коллег ?<BR>- <A href="http://www.certifications.ru/" 
+      target=_blank>Пройти сертификацию</A> и продемонстрировать<BR>&nbsp;&nbsp; 
+      свой профессионализм. <A 
+      href="http://www.certifications.ru/about/whatgives.php" 
+      target=_blank>Подробнее...</A></FONT></SMALL></TD></TR></TBODY></TABLE></CENTER><!-- ТЕКСТОВЫЙ БАННЕР CERTIFICATION -->
+<DIV align=center>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width=680>
+  <TBODY>
+  <TR>
+    <TD>
+      <HR>
+
+      <H3>Преобразование строки в математическое выражение и получение 
+      результата.</H3>
+      <P>Автор: <A href="mailto:vava@bplnet.com">Vimil Saju</A></P>
+      <P>Представляю Вашему вниманию сомпонент, на вход которого подаётся 
+      строка, содержащая математическое выражение, а на выходе результат 
+      вычисления этого выражения. При необходимости Вам не составит труда 
+      добавить в компонент такие функции как sin,cos,log,tan и т.д. Единственная 
+      неприятность, это присутствие глюка. Если ввести строку типа '5* -3', то 
+      мы получим ошибку. Я обязательно в ближайшее время постараюсь исправить 
+      данный баг.</P>
+      <P>Совместимость: Delphi 4.x (или выше)</P>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD width=750 bgColor=#a5e4a7><FONT style="FONT-SIZE: 10pt" 
+            face=Tahoma size=-1><B>&nbsp; Собственно сам 
+          исходничек:</B></FONT></TD></TR></TBODY></TABLE>
+      <P>unit MathComponent; <BR><BR>interface <BR><BR>uses 
+      <BR>&nbsp;&nbsp;Windows, Messages, SysUtils, Classes, Graphics, Controls, 
+      Forms, Dialogs,math; <BR><BR><BR>type 
+      <BR>TMathtype=(mtnil,mtoperator,mtlbracket,mtrbracket,mtoperand); 
+      <BR><BR>type <BR>TMathOperatortype=(monone,moadd,mosub,modiv,momul,mopow); 
+      <BR><BR>type <BR>pmathchar = ^Tmathchar; <BR>TMathChar = record 
+      <BR>&nbsp;&nbsp;case mathtype: Tmathtype of <BR>&nbsp;&nbsp; 
+      mtoperand:(data:extended); <BR>&nbsp;&nbsp; 
+      mtoperator:(op:TMathOperatortype); <BR>end; <BR><BR>type 
+      <BR>&nbsp;&nbsp;TMathControl = class(TComponent) <BR>&nbsp;&nbsp;private 
+      <BR>&nbsp;&nbsp; input,output,stack:array of tmathchar; <BR>&nbsp;&nbsp; 
+      fmathstring:string; <BR>&nbsp;&nbsp; function getresult:extended; 
+      <BR>&nbsp;&nbsp; function 
+      calculate(operand1,operand2,operator:Tmathchar):extended; <BR>&nbsp;&nbsp; 
+      function getoperator(c:char):TMathOperatortype; <BR>&nbsp;&nbsp; function 
+      getoperand(mid:integer;var len:integer):extended; <BR>&nbsp;&nbsp; 
+      procedure processstring; <BR>&nbsp;&nbsp; procedure convertinfixtopostfix; 
+      <BR>&nbsp;&nbsp; function isdigit(c:char):boolean; <BR>&nbsp;&nbsp; 
+      function isoperator(c:char):boolean; <BR>&nbsp;&nbsp; function 
+      getprecedence(mop:TMathOperatortype):integer; <BR>&nbsp;&nbsp;protected 
+      <BR>&nbsp;&nbsp;published <BR>&nbsp;&nbsp; property MathExpression:string 
+      read fmathstring write fmathstring; <BR>&nbsp;&nbsp; property 
+      MathResult:extended read getresult; <BR>&nbsp;&nbsp;end; <BR><BR>procedure 
+      Register; <BR><BR>implementation <BR><BR>function 
+      Tmathcontrol.calculate(operand1,operand2,operator:Tmathchar):extended; 
+      <BR>begin <BR>result:=0; <BR>case operator.op of <BR>&nbsp;&nbsp;moadd: 
+      <BR>&nbsp;&nbsp; result:=operand1.data + operand2.data; 
+      <BR>&nbsp;&nbsp;mosub: <BR>&nbsp;&nbsp; result:=operand1.data - 
+      operand2.data; <BR>&nbsp;&nbsp;momul: <BR>&nbsp;&nbsp; 
+      result:=operand1.data * operand2.data; <BR>&nbsp;&nbsp;modiv: 
+      <BR>&nbsp;&nbsp; if (operand1.data&lt;&gt;0) and (operand2.data&lt;&gt;0) 
+      then <BR>&nbsp;&nbsp;&nbsp;&nbsp;result:=operand1.data / operand2.data 
+      <BR>&nbsp;&nbsp; else <BR>&nbsp;&nbsp;&nbsp;&nbsp;result:=0; 
+      <BR>&nbsp;&nbsp;mopow: result:=power(operand1.data,operand2.data); 
+      <BR>end; <BR>end; <BR><BR>function Tmathcontrol.getresult:extended; 
+      <BR>var <BR>i:integer; <BR>tmp1,tmp2,tmp3:tmathchar; <BR>begin 
+      <BR>convertinfixtopostfix; <BR>setlength(stack,0); <BR>for i:=0 to 
+      length(output)-1 do <BR>&nbsp;&nbsp;begin <BR>&nbsp;&nbsp; if 
+      output[i].mathtype=mtoperand then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; setlength(stack,length(stack)+1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; stack[length(stack)-1]:=output[i]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;end <BR>&nbsp;&nbsp; else if 
+      output[i].mathtype=mtoperator then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp1:=stack[length(stack)-1]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp2:=stack[length(stack)-2]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setlength(stack,length(stack)-2); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp3.mathtype:=mtoperand; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp3.data:=calculate(tmp2,tmp1,output[i]); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setlength(stack,length(stack)+1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stack[length(stack)-1]:=tmp3; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;end; <BR>&nbsp;&nbsp;end; 
+      <BR>result:=stack[0].data; <BR>setlength(stack,0); <BR>setlength(input,0); 
+      <BR>setlength(output,0); <BR>end; <BR><BR>function 
+      Tmathcontrol.getoperator(c:char):TMathOperatortype; <BR>begin 
+      <BR>result:=monone; <BR>if c='+' then <BR>&nbsp;&nbsp;result:=moadd 
+      <BR>else if c='*' then <BR>&nbsp;&nbsp;result:=momul <BR>else if c='/' 
+      then <BR>&nbsp;&nbsp;result:=modiv <BR>else if c='-' then 
+      <BR>&nbsp;&nbsp;result:=mosub <BR>else if c='^' then 
+      <BR>&nbsp;&nbsp;result:=mopow; <BR>end; <BR><BR>function 
+      Tmathcontrol.getoperand(mid:integer;var len:integer):extended; <BR>var 
+      <BR>i,j:integer; <BR>tmpnum:string; <BR>begin <BR>j:=1; <BR>for i:=mid to 
+      length(fmathstring)-1 do <BR>&nbsp;&nbsp;begin <BR>&nbsp;&nbsp; if 
+      isdigit(fmathstring[i]) then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; if j&lt;=20 then 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmpnum:=tmpnum+fmathstring[i]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; j:=j+1; <BR>&nbsp;&nbsp;&nbsp;&nbsp;end 
+      <BR>&nbsp;&nbsp; else <BR>&nbsp;&nbsp;&nbsp;&nbsp;break; 
+      <BR>&nbsp;&nbsp;end; <BR>result:=strtofloat(tmpnum); 
+      <BR>len:=length(tmpnum); <BR>end; <BR><BR>procedure 
+      Tmathcontrol.processstring; <BR>var <BR>i:integer; <BR>numlen:integer; 
+      <BR>begin <BR>i:=0; <BR>numlen:=0; <BR>setlength(output,0); 
+      <BR>setlength(input,0); <BR>setlength(stack,0); 
+      <BR>fmathstring:='('+fmathstring+')'; 
+      <BR>setlength(input,length(fmathstring)); <BR>while 
+      i&lt;=length(fmathstring)-1 do <BR>&nbsp;&nbsp;begin <BR>&nbsp;&nbsp; if 
+      fmathstring[i+1]='(' then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; input[i].mathtype:=mtlbracket; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; i:=i+1; <BR>&nbsp;&nbsp;&nbsp;&nbsp;end 
+      <BR>&nbsp;&nbsp; else if fmathstring[i+1]=')' then 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin <BR>&nbsp;&nbsp;&nbsp;&nbsp; 
+      input[i].mathtype:=mtrbracket; <BR>&nbsp;&nbsp;&nbsp;&nbsp; i:=i+1; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;end <BR>&nbsp;&nbsp; else if 
+      isoperator(fmathstring[i+1]) then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; input[i].mathtype:=mtoperator; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; input[i].op:=getoperator(fmathstring[i+1]); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; i:=i+1; <BR>&nbsp;&nbsp;&nbsp;&nbsp;end 
+      <BR>&nbsp;&nbsp; else if isdigit(fmathstring[i+1]) then 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin <BR>&nbsp;&nbsp;&nbsp;&nbsp; 
+      input[i].mathtype:=mtoperand; <BR>&nbsp;&nbsp;&nbsp;&nbsp; 
+      input[i].data:=getoperand(i+1,numlen); <BR>&nbsp;&nbsp;&nbsp;&nbsp; 
+      i:=i+numlen; <BR>&nbsp;&nbsp;&nbsp;&nbsp;end; <BR>&nbsp;&nbsp;end; 
+      <BR>end; <BR><BR><BR>function Tmathcontrol.isoperator(c:char):boolean; 
+      <BR>begin <BR>result:=false; <BR>if (c='+') or (c='-') or (c='*') or 
+      (c='/') or (c='^') then <BR>&nbsp;&nbsp;result:=true; <BR>end; 
+      <BR><BR>function Tmathcontrol.isdigit(c:char):boolean; <BR>begin 
+      <BR>result:=false; <BR>if ((integer(c)&gt; 47) and (integer(c)&lt; 58)) or 
+      (c='.') then <BR>&nbsp;&nbsp;result:=true; <BR>end; <BR><BR>function 
+      Tmathcontrol.getprecedence(mop:TMathOperatortype):integer; <BR>begin 
+      <BR>result:=-1; <BR>case mop of <BR>&nbsp;&nbsp;moadd:result:=1; 
+      <BR>&nbsp;&nbsp;mosub:result:=1; <BR>&nbsp;&nbsp;momul:result:=2; 
+      <BR>&nbsp;&nbsp;modiv:result:=2; <BR>&nbsp;&nbsp;mopow:result:=3; <BR>end; 
+      <BR>end; <BR><BR>procedure Tmathcontrol.convertinfixtopostfix; <BR>var 
+      <BR>i,j,prec:integer; <BR>begin <BR>processstring; <BR>for i:=0 to 
+      length(input)-1 do <BR>&nbsp;&nbsp;begin <BR>&nbsp;&nbsp; if 
+      input[i].mathtype=mtoperand then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; setlength(output,length(output)+1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; output[length(output)-1]:=input[i]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;end <BR>&nbsp;&nbsp; else if 
+      input[i].mathtype=mtlbracket then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; setlength(stack,length(stack)+1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; stack[length(stack)-1]:=input[i]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;end <BR>&nbsp;&nbsp; else if 
+      input[i].mathtype=mtoperator then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; prec:=getprecedence(input[i].op); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; j:=length(stack)-1; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; if j&gt;=0 then 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      while(getprecedence(stack[j].op)&gt;=prec) and (j&gt;=0) do 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      setlength(output,length(output)+1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      output[length(output)-1]:=stack[j]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      setlength(stack,length(stack)-1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; j:=j-1; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setlength(stack,length(stack)+1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; stack[length(stack)-1]:=input[i]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;end <BR>&nbsp;&nbsp; else if 
+      input[i].mathtype=mtrbracket then <BR>&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; j:=length(stack)-1; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; if j&gt;=0 then 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      while(stack[j].mathtype&lt;&gt;mtlbracket) and (j&gt;=0) do 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      setlength(output,length(output)+1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      output[length(output)-1]:=stack[j]; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      setlength(stack,length(stack)-1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; j:=j-1; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if j&gt;=0 then 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setlength(stack,length(stack)-1); 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end; 
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp;end; <BR>&nbsp;&nbsp;end; <BR>end; 
+      <BR><BR><BR>procedure Register; <BR>begin 
+      <BR>&nbsp;&nbsp;RegisterComponents('Samples', [TMathControl]); <BR>end; 
+      <BR><BR>end. </P>
+      <P><BR></P></TD></TR></TBODY></TABLE></CENTER></DIV></TBODY>
+<P align=center><BR><BR>
+<DIV align=center>
+<HR width=700>
+
+<SCRIPT language=JavaScript> var loc = ''; </SCRIPT>
+
+<SCRIPT language=JavaScript1.4>try{ var loc = escape(top.location.href); }catch(e){;}</SCRIPT>
+
+<SCRIPT language=JavaScript>
+ document.write("<SC"+"RIPT language='JavaScript' src='http://ad.strict.tbn.ru/bb.cgi?cmd=ad&hreftarget=_blank&pubid=2850676&pg=3&r=js&ssi=nofillers&vbn=353&num=1&w=468&h=60&&ref="+escape(document.referrer)+"&loc="+loc+"&nocache="+Math.round(Math.random()*999111)+"'>\n</SC"+"RIPT>");
+</SCRIPT>
+</DIV>
+<P></P></BODY></HTML>
