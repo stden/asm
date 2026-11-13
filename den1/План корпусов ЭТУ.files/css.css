@@ -1,0 +1,54 @@
+A.menu {
+	FONT: bold 12px Geneva, Arial, Helvetica, san-serif; COLOR: #000000
+}
+A.menu:hover {
+	FONT: bold 12px Geneva, Arial, Helvetica, san-serif; COLOR: #ab6c0e; TEXT-DECORATION: underline
+}
+A.main {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial; TEXT-DECORATION: none
+}
+A.main:hover {
+	FONT-SIZE: 12px; COLOR: #aa0000; FONT-FAMILY: Tahoma, Arial; TEXT-DECORATION: underline
+}
+A.main:active {
+	FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: Tahoma, Arial; TEXT-DECORATION: underline
+}
+A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+LI {
+	FONT-SIZE: 11pt; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif
+}
+TD {
+	FONT-SIZE: 11pt; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif
+}
+UL LI A {
+	LIST-STYLE-IMAGE: url(../images/marker3.gif)
+}
+.just {
+	TEXT-ALIGN: justify
+}
+.data {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: Tahoma, Verdana, Arial
+}
+.verbana_10 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.time_b {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.lite {
+	FONT-SIZE: 10px; COLOR: #828282; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+A.more:hover {
+	TEXT-DECORATION: underline
+}
+A.more {
+	FONT-SIZE: 10px; COLOR: #2986c8; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.mourning {
+	BORDER-RIGHT: #000000 1px ridge; PADDING-RIGHT: 0px; BORDER-TOP: #000000 1px ridge; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: #000000 1px ridge; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px ridge
+}

@@ -1,0 +1,30 @@
+UNKNOWN {
+	FONT-SIZE: 12pt; COLOR: black; FONT-FAMILY: Arial, sans-serif
+}
+H1 {
+	FONT-SIZE: 20pt; COLOR: blue; FONT-FAMILY: Arial, sans-serif
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 18pt; COLOR: blue; FONT-FAMILY: Arial, sans-serif
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 16pt; COLOR: blue; FONT-FAMILY: Arial, sans-serif
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: darkgray; SCROLLBAR-HIGHLIGHT-COLOR: black; SCROLLBAR-SHADOW-COLOR: black; SCROLLBAR-3DLIGHT-COLOR: black; SCROLLBAR-ARROW-COLOR: blue; SCROLLBAR-TRACK-COLOR: #bbbbbb; SCROLLBAR-DARKSHADOW-COLOR: black
+}
+P {
+	COLOR: black; fontfamily: "Arial, sans-serif"; fontsize: 12pt; fontweight: normal
+}
+H1 {
+	COLOR: blue; fontfamily: "Arial, sans-serif"; fontsize: 20pt
+}
+H2 {
+	COLOR: blue; fontfamily: "Arial, sans-serif"; fontsize: 18pt; fontweight: normal
+}
+H3 {
+	COLOR: blue; fontfamily: "Arial, sans-serif"; fontsize: 16pt; fontweight: normal
+}
+BODY {
+	SCROLLBAR-FACECOLOR: darkgray; SCROLLBAR-HIGHLIGHTCOLOR: black; SCROLLBAR-SHADOWCOLOR: black; SCROLLBAR-3DLIGHTCOLOR: black; SCROLLBAR-ARROWCOLOR: blue; SCROLLBAR-TRACKCOLOR: #BBBBBB; SCROLLBAR-DARKSHADOWCOLOR: black
+}
